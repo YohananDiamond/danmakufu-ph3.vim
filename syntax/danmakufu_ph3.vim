@@ -13,7 +13,7 @@ syn match ph3Builtin /\v<(add|append|compare|concatenate|divide|false|index|leng
 
 " FIXME: there should be a ph3Indentifier in the contains here, too, but
 " I don't wanna highlight it in the start string.
-syn region ph3Metadata matchgroup=ph3MetadataDelim start=/\v^\s*#[a-zA-Z_][a-zA-Z0-9_]*\[/ end=/\v\]/ contains=ph3String,ph3Number
+syn region ph3Metadata matchgroup=ph3MetadataDelim start=/\v^\s*#[a-zA-Z_][a-zA-Z0-9_]*\[/ end=/\v\]/ contains=ph3String,ph3Number,ph3Identifier
 
 syn region ph3Comment start=/\/\// end=/$/
 syn region ph3Comment start=/\/\*/ end=/\*\//
